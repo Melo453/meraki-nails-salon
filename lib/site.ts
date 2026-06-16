@@ -1,0 +1,23 @@
+export const SITE = {
+  name: "meraki",
+  fullName: "meraki",
+  location: "Córdoba Capital, Argentina",
+  instagram: "https://www.instagram.com/meraki.nails.salon/",
+  instagramHandle: "@meraki.nails.salon",
+  whatsappNumber: "5493513031128",
+}
+
+export function whatsappLink(message: string) {
+  return `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(message)}`
+}
+
+export const WHATSAPP_DEFAULT = whatsappLink(
+  "¡Hola Aylen! Me gustaría reservar un turno",
+)
+
+export const NAV_LINKS = [
+  { label: "Servicios", href: "#servicios" },
+  { label: "Trabajos", href: "#galeria" },
+  { label: "Precios", href: "#precios" },
+  { label: "Preguntas", href: "#faq" },
+]

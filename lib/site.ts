@@ -20,4 +20,5 @@ export const NAV_LINKS = [
   { label: "Trabajos", href: "#galeria" },
   { label: "Precios", href: "#precios" },
   { label: "Preguntas", href: "#faq" },
+  { label: "Contacto", href: "#contacto" },
 ]

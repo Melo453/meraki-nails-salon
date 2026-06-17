@@ -6,25 +6,21 @@ const PRICES = [
   {
     name: "Semipermanente",
     price: "A consultar",
-    popular: true,
     message: "¡Hola Aylen! Quiero consultar el valor del servicio de semipermanente.",
   },
   {
     name: "Kapping",
     price: "A consultar",
-    popular: false,
     message: "¡Hola Aylen! Quiero consultar el valor del servicio de kapping.",
   },
   {
     name: "Soft gel",
     price: "A consultar",
-    popular: false,
     message: "¡Hola Aylen! Quiero consultar el valor del servicio de soft gel.",
   },
   {
     name: "Nail art",
     price: "Según diseño",
-    popular: false,
     message: "¡Hola Aylen! Tengo un diseño en mente y quiero consultar el valor del nail art. ¿Te puedo enviar una foto de referencia?",
   },
 ]
@@ -52,11 +48,6 @@ export function Pricing() {
                   <span className="text-base font-medium text-foreground md:text-lg">
                     {item.name}
                   </span>
-                  {item.popular && (
-                    <span className="rounded-full bg-accent px-3 py-0.5 text-[0.7rem] font-medium uppercase tracking-wide text-accent-foreground">
-                      Más consultado
-                    </span>
-                  )}
                 </div>
                 <a
                   href={whatsappLink(item.message)}

@@ -3,10 +3,30 @@ import { SectionHeading } from "./section-heading"
 import { WhatsAppButton } from "./whatsapp-button"
 
 const PRICES = [
-  { name: "Semipermanente", price: "A consultar", popular: true },
-  { name: "Kapping", price: "A consultar", popular: false },
-  { name: "Soft gel", price: "A consultar", popular: false },
-  { name: "Nail art", price: "Según diseño", popular: false },
+  {
+    name: "Semipermanente",
+    price: "A consultar",
+    popular: true,
+    message: "¡Hola Aylen! Quiero consultar el valor del servicio de semipermanente.",
+  },
+  {
+    name: "Kapping",
+    price: "A consultar",
+    popular: false,
+    message: "¡Hola Aylen! Quiero consultar el valor del servicio de kapping.",
+  },
+  {
+    name: "Soft gel",
+    price: "A consultar",
+    popular: false,
+    message: "¡Hola Aylen! Quiero consultar el valor del servicio de soft gel.",
+  },
+  {
+    name: "Nail art",
+    price: "Según diseño",
+    popular: false,
+    message: "¡Hola Aylen! Tengo un diseño en mente y quiero consultar el valor del nail art. ¿Te puedo enviar una foto de referencia?",
+  },
 ]
 
 export function Pricing() {
@@ -38,9 +58,15 @@ export function Pricing() {
                     </span>
                   )}
                 </div>
-                <span className="font-heading text-xl font-semibold text-primary md:text-2xl">
+                <a
+                  href={whatsappLink(item.message)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Consultar por ${item.name} en WhatsApp`}
+                  className="font-heading text-xl font-semibold text-primary underline-offset-4 transition-colors hover:text-foreground hover:underline md:text-2xl"
+                >
                   {item.price}
-                </span>
+                </a>
               </li>
             ))}
           </ul>

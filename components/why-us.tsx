@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Heart, Palette, ShieldCheck, Sparkles, Clock } from "lucide-react"
 
 const BENEFITS = [
@@ -35,12 +34,18 @@ export function WhyUs() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-2 md:px-8">
         <div className="relative order-last md:order-first">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-border/60 shadow-xl">
-            <Image
-              src="/images/estudio.png"
-              alt="Interior cálido y minimalista del estudio meraki"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+            <video
+              src="/images/espacio_trabajo.mp4"
+              poster="/images/estudio.png"
+              autoPlay
+              loop
+              muted
+              playsInline
+              disablePictureInPicture
+              controlsList="nodownload noplaybackrate nofullscreen"
+              preload="metadata"
+              aria-label="Interior cálido y minimalista del estudio meraki"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
         </div>

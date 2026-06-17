@@ -28,7 +28,7 @@ export function FinalCta() {
         <div className="relative overflow-hidden rounded-[2.5rem] border border-border/60 bg-primary px-6 py-16 text-center shadow-2xl shadow-primary/20 md:px-12 md:py-20">
           <div className="absolute -right-10 -top-10 hidden h-48 w-48 overflow-hidden rounded-full border-8 border-primary-foreground/15 md:block">
             <Image
-              src="/images/manos-cliente.png"
+              src="/images/manos-cliente.jpeg"
               alt=""
               fill
               sizes="200px"

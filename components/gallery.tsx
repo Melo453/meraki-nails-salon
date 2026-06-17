@@ -10,13 +10,13 @@ const GALLERY = [
     className: "sm:col-span-2 sm:row-span-2",
   },
   {
-    src: "/images/minimalista.png",
+    src: "/images/minimalista.jpeg",
     label: "Diseños minimalistas",
     alt: "Diseño minimalista con detalles dorados",
     className: "",
   },
   {
-    src: "/images/colores-plenos.png",
+    src: "/images/color_pleno.jpeg",
     label: "Colores plenos",
     alt: "Uñas en colores plenos terracota y rosa",
     className: "",

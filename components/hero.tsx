@@ -65,7 +65,7 @@ export function Hero() {
         <div className="relative grid grid-cols-[1fr_0.72fr] gap-4">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-border/60 shadow-2xl shadow-primary/10">
             <Image
-              src="/images/hero-manicura.jpeg"
+              src="/images/hero1.jpeg"
               alt="Manos con manicura nude rosada recién realizada en meraki"
               fill
               priority
@@ -76,7 +76,7 @@ export function Hero() {
           <div className="grid gap-4">
             <div className="relative aspect-square overflow-hidden rounded-[1.5rem] border border-border/60 shadow-xl shadow-primary/10">
               <Image
-                src="/images/nail-art.jpeg"
+                src="/images/hero2.jpeg"
                 alt="Diseño nail art realizado en meraki"
                 fill
                 sizes="(max-width: 768px) 35vw, 20vw"
@@ -85,7 +85,7 @@ export function Hero() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-[1.5rem] border border-border/60 shadow-xl shadow-primary/10">
               <Image
-                src="/images/soft-gel.jpeg"
+                src="/images/hero3.jpeg"
                 alt="Soft gel nude realizado en meraki"
                 fill
                 sizes="(max-width: 768px) 35vw, 20vw"

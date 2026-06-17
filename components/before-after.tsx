@@ -3,24 +3,24 @@ import { SITE } from "@/lib/site"
 
 const BEFORE_AFTER = [
   {
-    title: "Semipermanente nude",
+    title: "Kapping gel + nail art",
     before: {
-      src: "/images/antes.png",
+      src: "/images/antes_nail-art.jpeg",
       alt: "Uñas naturales antes del esmaltado semipermanente",
     },
     after: {
-      src: "/images/despues.png",
+      src: "/images/despues_nail-art.jpeg",
       alt: "Uñas con esmaltado semipermanente nude terminado",
     },
   },
   {
-    title: "Extensión soft gel",
+    title: "Extensión soft gel + esmaltado semipermanente",
     before: {
-      src: "/images/antes.png",
+      src: "/images/antes_soft-gel.jpeg",
       alt: "Uñas naturales antes de la extensión soft gel",
     },
     after: {
-      src: "/images/despues.jpg",
+      src: "/images/despues_soft-gel.jpeg",
       alt: "Extensión soft gel nude con acabado brillante",
     },
   },
@@ -104,8 +104,8 @@ function BeforeAfterImage({
       <span
         className={
           labelTone === "dark"
-            ? "absolute left-2 top-2 rounded-full bg-foreground px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-background"
-            : "absolute left-2 top-2 rounded-full bg-background px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-foreground"
+            ? "absolute left-4 top-4 rounded-full border border-primary-foreground/20 bg-primary px-3.5 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-primary-foreground shadow-sm"
+            : "absolute left-4 top-4 rounded-full border border-border bg-accent px-3.5 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-accent-foreground shadow-sm"
         }
       >
         {label}

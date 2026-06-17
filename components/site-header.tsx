@@ -16,23 +16,23 @@ export function SiteHeader() {
             {SITE.name}
           </span>
           <span className="hidden text-xs uppercase tracking-[0.25em] text-muted-foreground sm:inline">
-            Nails salon
+            Estudio de uñas
           </span>
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-4 lg:flex xl:gap-5">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground xl:text-sm"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <WhatsAppButton href={WHATSAPP_DEFAULT} size="sm">
             Reservar turno
           </WhatsAppButton>
@@ -41,7 +41,7 @@ export function SiteHeader() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full text-foreground md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full text-foreground lg:hidden"
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
           aria-expanded={open}
         >
@@ -50,7 +50,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-border/60 bg-background md:hidden">
+        <div className="border-t border-border/60 bg-background lg:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4">
             {NAV_LINKS.map((link) => (
               <a

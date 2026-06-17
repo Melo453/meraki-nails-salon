@@ -28,7 +28,7 @@ const BEFORE_AFTER = [
 
 export function BeforeAfter() {
   return (
-    <section className="bg-background py-20 md:py-28">
+    <section id="antes-despues" className="scroll-mt-24 bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="rounded-[2rem] border border-border/60 bg-card/70 p-5 shadow-sm md:p-8">
           <div className="grid gap-4 md:grid-cols-[1.1fr_0.9fr] md:items-start">

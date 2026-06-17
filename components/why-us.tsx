@@ -31,7 +31,7 @@ const BENEFITS = [
 
 export function WhyUs() {
   return (
-    <section className="bg-secondary/40 py-20 md:py-28">
+    <section id="beneficios" className="scroll-mt-24 bg-secondary/40 py-20 md:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-2 md:px-8">
         <div className="relative order-last md:order-first">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-border/60 shadow-xl">

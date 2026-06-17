@@ -21,7 +21,7 @@ const TESTIMONIALS = [
 
 export function Testimonials() {
   return (
-    <section className="bg-background py-20 md:py-28">
+    <section id="opiniones" className="scroll-mt-24 bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <SectionHeading
           eyebrow="Testimonios"

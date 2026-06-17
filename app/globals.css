@@ -2,7 +2,7 @@
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.no-dark-mode *));
 /* Meraki nail studio theme */
 
 @theme inline {
@@ -85,76 +85,40 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+.light,
 .dark {
-  color-scheme: dark;
-  --background: oklch(0.2 0.018 145);
-  --foreground: oklch(0.94 0.012 91);
-  --card: oklch(0.25 0.02 145);
-  --card-foreground: oklch(0.94 0.012 91);
-  --popover: oklch(0.25 0.02 145);
-  --popover-foreground: oklch(0.94 0.012 91);
-  --primary: oklch(0.76 0.04 125);
-  --primary-foreground: oklch(0.2 0.018 145);
-  --secondary: oklch(0.3 0.021 138);
-  --secondary-foreground: oklch(0.94 0.012 91);
-  --muted: oklch(0.3 0.021 138);
-  --muted-foreground: oklch(0.75 0.018 105);
-  --accent: oklch(0.37 0.032 138);
-  --accent-foreground: oklch(0.94 0.012 91);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.95 0.012 91 / 13%);
-  --input: oklch(0.95 0.012 91 / 18%);
-  --ring: oklch(0.76 0.04 125);
-  --chart-1: oklch(0.76 0.04 125);
-  --chart-2: oklch(0.64 0.04 146);
-  --chart-3: oklch(0.82 0.025 91);
-  --chart-4: oklch(0.5 0.03 135);
-  --chart-5: oklch(0.9 0.018 96);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  color-scheme: light;
+  --background: #f5f1e6;
+  --foreground: #27382f;
+  --card: #fffaf0;
+  --card-foreground: #27382f;
+  --popover: #fffaf0;
+  --popover-foreground: #27382f;
+  --primary: #72856f;
+  --primary-foreground: #fffaf0;
+  --secondary: #dfe7d6;
+  --secondary-foreground: #39483f;
+  --muted: #e8e4d8;
+  --muted-foreground: #58675c;
+  --accent: #c6d0bd;
+  --accent-foreground: #35443a;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #cbd4c4;
+  --input: #cbd4c4;
+  --ring: #72856f;
+  --chart-1: #72856f;
+  --chart-2: #9cad8f;
+  --chart-3: #c6d0bd;
+  --chart-4: #4e6154;
+  --chart-5: #e8e4d8;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not(.light) {
-    color-scheme: dark;
-    --background: oklch(0.2 0.018 145);
-    --foreground: oklch(0.94 0.012 91);
-    --card: oklch(0.25 0.02 145);
-    --card-foreground: oklch(0.94 0.012 91);
-    --popover: oklch(0.25 0.02 145);
-    --popover-foreground: oklch(0.94 0.012 91);
-    --primary: oklch(0.76 0.04 125);
-    --primary-foreground: oklch(0.2 0.018 145);
-    --secondary: oklch(0.3 0.021 138);
-    --secondary-foreground: oklch(0.94 0.012 91);
-    --muted: oklch(0.3 0.021 138);
-    --muted-foreground: oklch(0.75 0.018 105);
-    --accent: oklch(0.37 0.032 138);
-    --accent-foreground: oklch(0.94 0.012 91);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(0.95 0.012 91 / 13%);
-    --input: oklch(0.95 0.012 91 / 18%);
-    --ring: oklch(0.76 0.04 125);
-    --chart-1: oklch(0.76 0.04 125);
-    --chart-2: oklch(0.64 0.04 146);
-    --chart-3: oklch(0.82 0.025 91);
-    --chart-4: oklch(0.5 0.03 135);
-    --chart-5: oklch(0.9 0.018 96);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
-  }
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
 @layer base {
@@ -166,5 +130,6 @@
   }
   html {
     @apply font-sans;
+    color-scheme: light;
   }
 }

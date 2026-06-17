@@ -18,6 +18,8 @@ export const WHATSAPP_DEFAULT = whatsappLink(
 export const NAV_LINKS = [
   { label: "Trabajos", href: "#galeria" },
   { label: "Servicios", href: "#servicios" },
+  { label: "Por qué Meraki", href: "#beneficios" },
+  { label: "Opiniones", href: "#opiniones" },
   { label: "Reservar", href: "#reservar" },
   { label: "Preguntas", href: "#faq" },
   { label: "Contacto", href: "#contacto" },

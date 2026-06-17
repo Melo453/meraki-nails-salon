@@ -39,7 +39,7 @@ export function Faq() {
   const [open, setOpen] = useState<number | null>(0)
 
   return (
-    <section id="faq" className="bg-secondary/40 py-20 md:py-28">
+    <section id="faq" className="scroll-mt-24 bg-secondary/40 py-20 md:py-28">
       <div className="mx-auto max-w-3xl px-5 md:px-8">
         <SectionHeading eyebrow="Preguntas frecuentes" title="Antes de tu visita" />
 

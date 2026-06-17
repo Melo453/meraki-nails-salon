@@ -11,7 +11,7 @@ const PRICES = [
 
 export function Pricing() {
   return (
-    <section id="precios" className="bg-background py-20 md:py-28">
+    <section id="precios" className="scroll-mt-24 bg-background py-20 md:py-28">
       <div className="mx-auto max-w-3xl px-5 md:px-8">
         <SectionHeading
           eyebrow="Precios"

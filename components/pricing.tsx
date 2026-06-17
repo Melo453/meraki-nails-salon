@@ -3,11 +3,10 @@ import { SectionHeading } from "./section-heading"
 import { WhatsAppButton } from "./whatsapp-button"
 
 const PRICES = [
-  { name: "Manicura clásica", price: "$8.000", popular: false },
-  { name: "Esmaltado semipermanente", price: "$14.000", popular: true },
-  { name: "Kapping", price: "$18.000", popular: false },
-  { name: "Soft gel", price: "$24.000", popular: false },
-  { name: "Nail art básico", price: "+ $3.000", popular: false },
+  { name: "Semipermanente", price: "A consultar", popular: true },
+  { name: "Kapping", price: "A consultar", popular: false },
+  { name: "Soft gel", price: "A consultar", popular: false },
+  { name: "Nail art", price: "Según diseño", popular: false },
 ]
 
 export function Pricing() {
@@ -16,8 +15,8 @@ export function Pricing() {
       <div className="mx-auto max-w-3xl px-5 md:px-8">
         <SectionHeading
           eyebrow="Precios"
-          title="Valores de referencia"
-          description="Precios orientativos en pesos argentinos. Algunos diseños especiales pueden variar según complejidad."
+          title="Valores orientativos"
+          description="Los valores pueden variar según el diseño, largo, técnica y complejidad. Para confirmar precio final, escribime por WhatsApp."
         />
 
         <div className="mt-12 overflow-hidden rounded-3xl border border-border/70 bg-card shadow-sm">
@@ -35,7 +34,7 @@ export function Pricing() {
                   </span>
                   {item.popular && (
                     <span className="rounded-full bg-accent px-3 py-0.5 text-[0.7rem] font-medium uppercase tracking-wide text-accent-foreground">
-                      Más pedido
+                      Más consultado
                     </span>
                   )}
                 </div>
@@ -48,8 +47,8 @@ export function Pricing() {
         </div>
 
         <p className="mt-5 text-center text-sm text-muted-foreground">
-          ¿Tenés un diseño en mente? Escribinos y te pasamos un presupuesto a
-          medida.
+          Esta sección es orientativa y se puede actualizar cuando cambien los
+          valores.
         </p>
 
         <div className="mt-7 flex justify-center">

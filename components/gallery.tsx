@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { SITE } from "@/lib/site"
 import { SectionHeading } from "./section-heading"
 
 const GALLERY = [
@@ -36,12 +37,12 @@ const GALLERY = [
 
 export function Gallery() {
   return (
-    <section id="galeria" className="bg-secondary/40 py-20 md:py-28">
+    <section id="galeria" className="scroll-mt-24 bg-secondary/40 py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <SectionHeading
           eyebrow="Trabajos"
-          title="Nuestra galería"
-          description="Una selección de diseños reales hechos en el estudio. De lo clásico a lo más creativo."
+          title="Trabajos recientes"
+          description="La mejor forma de elegir es ver resultados reales: terminaciones prolijas, diseños delicados y estilos distintos para inspirarte."
         />
 
         <div className="mt-12 grid auto-rows-[200px] grid-cols-2 gap-4 sm:grid-cols-4 sm:auto-rows-[220px]">
@@ -51,7 +52,7 @@ export function Gallery() {
               className={`group relative overflow-hidden rounded-3xl border border-border/60 ${item.className}`}
             >
               <Image
-                src={item.src || "/placeholder.svg"}
+                src={item.src}
                 alt={item.alt}
                 fill
                 sizes="(max-width: 640px) 50vw, 25vw"
@@ -66,41 +67,15 @@ export function Gallery() {
           ))}
         </div>
 
-        {/* Antes y después */}
-        <div className="mt-10">
-          <h3 className="text-center font-heading text-2xl font-medium text-foreground">
-            Antes y después
-          </h3>
-          <div className="mx-auto mt-6 grid max-w-2xl grid-cols-2 gap-4">
-            {[
-              {
-                src: "/images/antes.png",
-                tag: "Antes",
-                alt: "Uñas naturales antes del servicio",
-              },
-              {
-                src: "/images/despues.jpg",
-                tag: "Después",
-                alt: "Uñas con manicura prolija después del servicio",
-              },
-            ].map((item) => (
-              <figure
-                key={item.tag}
-                className="relative aspect-square overflow-hidden rounded-3xl border border-border/60"
-              >
-                <Image
-                  src={item.src || "/placeholder.svg"}
-                  alt={item.alt}
-                  fill
-                  sizes="(max-width: 768px) 50vw, 320px"
-                  className="object-cover"
-                />
-                <span className="absolute left-3 top-3 rounded-full bg-card/90 px-3 py-1 text-xs font-medium text-foreground backdrop-blur">
-                  {item.tag}
-                </span>
-              </figure>
-            ))}
-          </div>
+        <div className="mt-10 flex justify-center">
+          <a
+            href={SITE.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/20 transition-colors hover:bg-primary/90"
+          >
+            Ver más trabajos en Instagram
+          </a>
         </div>
       </div>
     </section>

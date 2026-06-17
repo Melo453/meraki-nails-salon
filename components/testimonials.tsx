@@ -9,7 +9,7 @@ const TESTIMONIALS = [
   },
   {
     name: "Caro D.",
-    text: "Súper prolija y detallista. El estudio es divino y te hacen sentir muy cómoda. Recomiendo mil veces.",
+    text: "Súper prolija y detallista. El estudio es divino y te hace sentir muy cómoda. Recomiendo mil veces.",
     detail: "Soft gel",
   },
   {

@@ -41,11 +41,11 @@ export function FinalCta() {
               Contacto
             </span>
             <h2 className="text-balance font-heading text-4xl font-medium leading-tight text-primary-foreground md:text-5xl">
-              Reservá tu turno y date ese gusto
+              ¿Querés reservar tu próximo turno?
             </h2>
             <p className="mt-4 text-pretty leading-relaxed text-primary-foreground/85">
-              Escribinos por WhatsApp y coordinamos el día y horario que mejor te
-              quede. Te esperamos en meraki ✨
+              Escribime por WhatsApp, contame qué servicio tenés en mente y
+              coordinamos disponibilidad.
             </p>
             <div className="mt-8 flex flex-col items-center gap-3">
               <WhatsAppButton

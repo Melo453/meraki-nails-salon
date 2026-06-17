@@ -1,7 +1,7 @@
 export const SITE = {
   name: "meraki",
   fullName: "meraki",
-  location: "Córdoba Capital, Argentina",
+  location: "Córdoba Capital · Zona Norte · Barrio Parque Liceo 1ra Sección",
   instagram: "https://www.instagram.com/meraki.nails.salon/",
   instagramHandle: "@meraki.nails.salon",
   whatsappNumber: "5493513031128",
@@ -16,9 +16,9 @@ export const WHATSAPP_DEFAULT = whatsappLink(
 )
 
 export const NAV_LINKS = [
-  { label: "Servicios", href: "#servicios" },
   { label: "Trabajos", href: "#galeria" },
-  { label: "Precios", href: "#precios" },
+  { label: "Servicios", href: "#servicios" },
+  { label: "Reservar", href: "#reservar" },
   { label: "Preguntas", href: "#faq" },
   { label: "Contacto", href: "#contacto" },
 ]

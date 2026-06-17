@@ -17,7 +17,7 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: 'meraki · Estudio de Uñas en Córdoba Capital',
   description:
-    'meraki en Córdoba Capital. Manicura, esmaltado semipermanente, kapping, soft gel y nail art con atención personalizada. Reservá tu turno por WhatsApp.',
+    'meraki en Zona Norte, Córdoba Capital. Semipermanente, kapping, soft gel y nail art con atención por turno. Reservá por WhatsApp.',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -1,36 +1,26 @@
-import { Hand, Sparkles, Layers, Gem, Brush, Eraser } from "lucide-react"
+import { Sparkles, Layers, Gem, Brush } from "lucide-react"
 import { SectionHeading } from "./section-heading"
 
 const SERVICES = [
   {
-    icon: Hand,
-    title: "Manicura",
-    desc: "Limado, cutícula y prolijidad para unas manos cuidadas y naturales.",
-  },
-  {
     icon: Sparkles,
-    title: "Esmaltado semipermanente",
-    desc: "Color parejo y brillo que dura semanas, sin descascararse.",
+    title: "Semipermanente",
+    desc: "Color, brillo y prolijidad por más tiempo.",
   },
   {
     icon: Layers,
     title: "Kapping",
-    desc: "Refuerzo sobre la uña natural para más resistencia y prolijidad.",
+    desc: "Refuerzo sobre la uña natural para aportar resistencia y cuidado.",
   },
   {
     icon: Gem,
     title: "Soft gel",
-    desc: "Extensiones livianas y naturales con la forma que más te gusta.",
+    desc: "Extensiones delicadas para lograr largo y forma.",
   },
   {
     icon: Brush,
     title: "Nail art",
-    desc: "Diseños personalizados: francesitas, minimalistas y mucho más.",
-  },
-  {
-    icon: Eraser,
-    title: "Retiro de producto",
-    desc: "Retiro seguro y cuidado, sin dañar tu uña natural.",
+    desc: "Diseños personalizados, detalles, brillos y estilos según la idea de cada clienta.",
   },
 ]
 
@@ -40,11 +30,11 @@ export function Services() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <SectionHeading
           eyebrow="Servicios"
-          title="Todo lo que tus uñas necesitan"
-          description="Cada servicio pensado para resaltar tu estilo, con técnicas prolijas y materiales de primera."
+          title="Servicios disponibles"
+          description="Elegí la técnica que mejor acompaña tus uñas, tu rutina y el estilo que querés llevar."
         />
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((s) => (
             <div
               key={s.title}

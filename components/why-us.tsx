@@ -4,28 +4,28 @@ import { Heart, Palette, ShieldCheck, Sparkles, Clock } from "lucide-react"
 const BENEFITS = [
   {
     icon: Heart,
-    title: "Atención personalizada",
-    desc: "Te escuchamos y diseñamos un servicio pensado para vos.",
+    title: "Diseños que van con vos",
+    desc: "Cada turno se piensa según tu estilo, tus uñas y lo que querés lograr.",
   },
   {
     icon: Palette,
-    title: "Diseños cuidados",
-    desc: "Cada detalle se trabaja con precisión y buen gusto.",
+    title: "Terminación prolija",
+    desc: "Forma, color y detalles cuidados para que el resultado se vea fino.",
   },
   {
     icon: Sparkles,
-    title: "Materiales de calidad",
-    desc: "Productos de primeras marcas para mejores resultados.",
+    title: "Uñas cuidadas",
+    desc: "Se trabaja con productos de calidad y técnicas pensadas para proteger la uña natural.",
   },
   {
     icon: ShieldCheck,
-    title: "Higiene y prolijidad",
-    desc: "Protocolos de higiene y herramientas esterilizadas.",
+    title: "Higiene en cada turno",
+    desc: "Herramientas y superficies preparadas para una atención cuidada.",
   },
   {
     icon: Clock,
-    title: "Resultados duraderos",
-    desc: "Acabados delicados que se mantienen impecables por semanas.",
+    title: "Turnos organizados",
+    desc: "Coordinás por WhatsApp y sabés qué servicio hacer antes de venir.",
   },
 ]
 
@@ -47,14 +47,15 @@ export function WhyUs() {
 
         <div>
           <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">
-            Por qué elegirnos
+            Por qué elegir meraki
           </span>
           <h2 className="mt-3 text-balance font-heading text-4xl font-medium leading-tight text-foreground md:text-5xl">
-            Un espacio pensado para mimarte
+            Un espacio tranquilo para salir con uñas impecables
           </h2>
           <p className="mt-4 max-w-md text-pretty leading-relaxed text-muted-foreground">
-            En meraki combinamos técnica, dedicación y un ambiente cálido para que
-            cada visita sea un momento para vos.
+            La idea es que vengas con una referencia, una ocasión o una idea
+            suelta, y te vayas con un resultado cuidado, prolijo y fácil de usar
+            en el día a día.
           </p>
 
           <ul className="mt-8 flex flex-col gap-4">

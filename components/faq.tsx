@@ -6,28 +6,32 @@ import { SectionHeading } from "./section-heading"
 
 const FAQS = [
   {
-    q: "¿Cuánto dura el servicio?",
-    a: "Depende del trabajo: una manicura simple lleva alrededor de 45 minutos, mientras que un soft gel con diseño puede tomar entre 1.30 y 2 horas. Siempre te avisamos el tiempo estimado al reservar.",
-  },
-  {
-    q: "¿Cuánto dura el esmaltado semipermanente?",
-    a: "Con los cuidados adecuados, el esmaltado semipermanente se mantiene impecable entre 2 y 3 semanas, sin descascararse ni perder brillo.",
-  },
-  {
     q: "¿Trabajás con turno?",
-    a: "Sí, atendemos únicamente con turno previo para dedicarle el tiempo que merecés a cada clienta. Lo coordinamos fácil por WhatsApp.",
-  },
-  {
-    q: "¿Qué pasa si quiero un diseño especial?",
-    a: "¡Nos encanta! Podés mandarnos fotos o ideas de referencia por WhatsApp y armamos un presupuesto a medida según la complejidad del diseño.",
+    a: "Sí, la atención es únicamente con turno previo para dedicarle el tiempo que merece cada clienta.",
   },
   {
     q: "¿Cómo reservo?",
-    a: "Escribinos por WhatsApp tocando cualquier botón de la página. Te pasamos disponibilidad y confirmamos tu turno al instante.",
+    a: "Escribime por WhatsApp, contame qué servicio querés y te paso disponibilidad para coordinar día y horario.",
+  },
+  {
+    q: "¿Puedo llevar una referencia de diseño?",
+    a: "Sí. Podés mandarme fotos o ideas por WhatsApp y vemos cómo adaptarlas a tus uñas, largo y estilo.",
+  },
+  {
+    q: "¿Cuánto dura el esmaltado semipermanente?",
+    a: "Depende del crecimiento y los cuidados, pero suele mantenerse prolijo entre 2 y 3 semanas.",
+  },
+  {
+    q: "¿Qué diferencia hay entre kapping y soft gel?",
+    a: "El kapping refuerza la uña natural. El soft gel se usa para sumar largo y forma con extensiones delicadas.",
   },
   {
     q: "¿Dónde estás ubicada?",
-    a: "Estamos en Córdoba Capital, Argentina. Al confirmar tu turno te enviamos la dirección exacta y las indicaciones para llegar.",
+    a: "Estoy en Córdoba Capital, Zona Norte, Barrio Parque Liceo 1ra Sección. Al confirmar tu turno te envío la dirección exacta.",
+  },
+  {
+    q: "¿Los precios son fijos?",
+    a: "Los valores pueden variar según diseño, largo, técnica y complejidad. Para confirmar el precio final, escribime por WhatsApp.",
   },
 ]
 

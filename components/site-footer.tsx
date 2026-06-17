@@ -37,8 +37,8 @@ export function SiteFooter() {
             {SITE.fullName}
           </p>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            Estudio de uñas en {SITE.location}. Manicura, esmaltado
-            semipermanente, soft gel y nail art con dedicación.
+            Estudio de uñas en {SITE.location}. Semipermanente, kapping, soft
+            gel y nail art con atención por turno.
           </p>
         </div>
 
